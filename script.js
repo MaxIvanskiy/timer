@@ -53,7 +53,7 @@ const displayTime = zone => {
 
     zoneTitle.innerHTML = `${ cleanZone } time`;
     zoneTime.innerHTML = cleanTime;
-    zoneInfo.innerHTML = `<p>${ cleanDate }, ${ day }, week ${ week }</p>`
+    zoneInfo.innerHTML = `<p>${ cleanDate }, ${ day }, week ${ week }, ${ dyaOfYear } day of year</p>`
 }
 
 
