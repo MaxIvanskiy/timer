@@ -3,37 +3,76 @@
     padding: 0;
 }
 body{
-    padding: 25px 15px;
     font-family: 'Montserrat', sans-serif;
-}
-select{
-    margin: 0 auto;
-    display: block;
-    padding: 10px;
-}
-.selectedTime{
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
-    margin: 30px 0;
-    text-align: center;
+    justify-content: space-between;
 }
-.selectedTime h2{
-    font-weight: 100;
-    font-size: 16px;
-    padding: 5px 0;
-    border-bottom: 1px solid rgba(0, 0, 0, .4);
+ul{
+    list-style: none;
 }
-.selectedTime h2:first-child{
-    background: rgb(110 233 193 / 20%);
-    font-weight: 400;
-    font-size: 44px;
-    border-bottom: none;
-    margin-bottom: 25px;
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 25px 15px;
 }
-.selectedTime h2:first-child span{
-    font-size: 44px;}
-
-.selectedTime h2 span{
+.top{
+    justify-content: center;
+}
+.main{
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.zone-title{
     font-size: 24px;
     font-weight: 400;
+}
+.zone-time{
+    font-size: 250px;
+    font-weight: 700;
+}
+.bottom{
+    flex-direction: column;
+    align-items: flex-end;
+}
+.popular-zones{
+    display: flex;
+    flex-wrap: wrap;
+}
+.popular-zones li{
+    cursor: pointer;
+    padding: 15px 25px;
+    background: rgb(229 229 229 / 30%);
+    margin:0 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    -webkit-box-shadow: 0px 0px 5px -1px rgba(91, 178, 244, 0.55);
+    -moz-box-shadow: 0px 0px 5px -1px rgba(91, 178, 244, 0.55);
+    box-shadow: 0px 0px 5px -1px rgba(91, 178, 244, 0.55);
+}
+.popular-zones li span{
+    font-weight: 400;
+}
+.popular-zones li:hover{
+    -webkit-box-shadow: 0px 0px 12px -1px rgba(91, 178, 244, 0.55);
+    -moz-box-shadow: 0px 0px 12px -1px rgba(91, 178, 244, 0.55);
+    box-shadow: 0px 0px 12px -1px rgba(91, 178, 244, 0.55);
+}
+.select-timezone{
+    margin: 15px 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    -webkit-box-shadow: 0px 0px 5px -1px rgba(91, 178, 244, 0.55);
+    -moz-box-shadow: 0px 0px 5px -1px rgba(91, 178, 244, 0.55);
+    box-shadow: 0px 0px 5px -1px rgba(91, 178, 244, 0.55);
+}
+.select-timezone:focus{
+    outline: none;
 }
