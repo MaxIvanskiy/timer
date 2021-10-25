@@ -25,6 +25,7 @@ const loadTime = (zone) => {
 }
 
 const displayTime = zone => {
+    const zoneUtc = zone.utc_offset;
     const zoneTitle = document.querySelector('.zone-title');
     const zoneTime = document.querySelector('.zone-time');
     const zoneInfo = document.querySelector('.zone-info');
@@ -51,7 +52,7 @@ const displayTime = zone => {
         }
     }
 
-    zoneTitle.innerHTML = `${ cleanZone } time`;
+    zoneTitle.innerHTML = `${ cleanZone } time <span>UTC ${ zoneUtc }</span>`;
     zoneTime.innerHTML = cleanTime;
     zoneInfo.innerHTML = `<p>${ cleanDate }, ${ day }, week ${ week }, ${ dyaOfYear } day of year</p>`
 }

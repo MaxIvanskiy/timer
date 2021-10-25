@@ -29,6 +29,10 @@ ul{
     font-size: 24px;
     font-weight: 400;
 }
+.zone-title span{
+    font-weight: 300;
+    font-size: 18px;
+}
 .zone-time{
     font-size: 250px;
     font-weight: 700;
